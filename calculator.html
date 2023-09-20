@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(70, 70, 70);
+        }
+        #call{
+            border: 1px solid black;
+            text-align: center;
+            width: 18%;
+            background-color: grey;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px black;
+            
+        }
+        input{
+            padding: 10px 15px;
+            margin: 1px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 100px;
+            border: none;
+            background-color: rgb(192, 192, 192);
+            color: rgb(83, 83, 83);
+            box-shadow: 2px 2px 2px black;
+            font-size: 15px;
+            font-weight:500;
+
+        }
+        input:hover{
+            background-color: rgb(172, 170, 170);
+        }
+        .cal{
+            border: 1px solid black;
+            background-color: white;
+        }
+        form{
+         align-items: center;
+         text-align: center;
+         
+         margin-top: 200px;
+         margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" id="call">
+
+        <h1 style="color: white;">Calculator</h1>
+        <input type="text" class="cal" disabled  name="cal"  >
+        <br> 
+
+        <input type="button" value="1" name="One" onclick="call.cal.value +='1'">
+        <input type="button" value="2" name="Two" onclick="call.cal.value +='2'">
+        <input type="button" value="3" name="Three" onclick="call.cal.value +='3'">
+        <input type="button" value="4" name="Four" onclick="call.cal.value +='4'">
+
+        <br>
+
+        <input type="button" value="5" name="Five" onclick="call.cal.value +='5'">
+        <input type="button" value="6" name="Six" onclick="call.cal.value +='6'">
+        <input type="button" value="7" name="Seven" onclick="call.cal.value +='7'">
+        <input type="button" value="8" name="Eight" onclick="call.cal.value +='8'">
+
+        <br>
+
+        <input type="button" value="9" name="Nine" onclick="call.cal.value +='9'">
+        <input type="button" value="0" name="Zero" onclick="call.cal.value +='0'">
+
+
+        <input type="button" value="+" name="plus" onclick="call.cal.value += '+'">
+        <input type="button" value="-" name="min" onclick=" call.cal.value += '-' ">
+        <br>
+        <input type="button" value="C" name="none" onclick="call.cal.value = '' ">
+
+        <input type="button" value="=" name="eq" onclick="call.cal.value  =
+        eval(call.cal.value) ">
+
+    </form>
+
+</body>
+</html>
