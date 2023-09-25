@@ -80,6 +80,50 @@ li{
      }
 }
 
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid red;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#span{
+    background: red;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+    
+    
+    
+    
+    
+}
+button:hover #span{
+    width: 100%;
+    color: white;
+    
+    
+
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}   
+
+
+
 /* about________________________________________ */
 #content-wrap{
     text-transform: uppercase;
